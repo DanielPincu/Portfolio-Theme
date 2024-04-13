@@ -11,22 +11,20 @@ if (!empty(get_field('http_url'))) {
 }
 ?>
 
-<div class="grid md:grid-cols-1 gap-10 mt-16">
+<div class="grid md:grid-cols-1">
     <div class="suitcase-card cursor-pointer">
-        <div class="suitcase-wrapper">
+        <div class="suitcase-wrapper crd-blue crd-red monitor">
             <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
-                <div class="suitcase-top bg-blue-400 dark:bg-red-400 p-4 relative">
-                    <div class="handle bg-blue-600 dark:bg-red-700 w-6 h-2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-                </div>
-                <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 h-80 dark:bg-red-200 p-10" onclick="toggleCardVisibility('<?php echo $title; ?>')">
-                    <h1 class="text-4xl font-bold cursor-pointer mb-5"><?php echo $title; ?></h1>
-                    <p class="text-xl"><?php echo $description ?></p>
+                
+                <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 h-72 md:h-80 bg-blue-200 dark:bg-red-200 p-10" onclick="toggleCardVisibility('<?php echo $title; ?>')">
+                    <h1 class="text-2xl font-bold cursor-pointer mb-5"><?php echo $title; ?></h1>
+                    <p><?php echo $description ?></p>
                 </div>
                 <div id="<?php echo $title; ?>" class="hidden expandable-card">
                     <a href="#" onclick="openModal('<?php echo $image_source; ?>'); return false;">
-                        <img class="bg-blue-200 dark:bg-red-200 rounded-3xl p-10" src="<?php echo $image["url"] ?>">
+                        <img class="bg-blue-200 dark:bg-red-200" src="<?php echo $image["url"] ?>">
                     </a>
-                    <p class="text-xl bg-blue-200 dark:bg-red-200 rounded-3xl p-10"><?php echo $extra_description ?></p>
+                    <p onclick="toggleCardVisibility('<?php echo $title; ?>')" class="bg-blue-200 dark:bg-red-200 rounded-3xl p-10"><?php echo $extra_description ?></p>
                 </div>
             </div>
         </div>

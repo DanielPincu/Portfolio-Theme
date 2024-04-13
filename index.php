@@ -208,7 +208,7 @@
       
     <div class="relative">
       <!-- Profile Image -->
-      <img class="rounded-full border-4 border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="<?php echo get_field("hero_image")["url"];?>" alt="">
+      <img class="rounded-full blink border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="<?php echo get_field("hero_image")["url"];?>" alt="">
 
       <!-- Welcome Message -->
       <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
@@ -231,16 +231,17 @@
 
 
 
-          <a href="<?php echo get_field('video_cv')['url'] ?>"><button class="block dark:hidden cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">Watch CV</button></a>
+          <a href="<?php echo get_field('video_cv')['url'] ?>"><button class="blink-blue block dark:hidden button bg-blue-500 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">Watch CV<div class="liquid2"></div></button> </a>
+         
 
-          <a href="<?php echo get_field('cv')['url'] ?>"><button class="block dark:hidden cv-button bg-gradient-to-r from-red-400 to-red-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44">Fetch CV</button></a>
+          <a href="<?php echo get_field('cv')['url'] ?>"><button class="blink-red block dark:hidden button bg-red-500 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44">Fetch CV <div class="liquid"></div></button></a>
 
 
 
 
-          <a href="<?php echo get_field('cv')['url'] ?>"><button class="hidden dark:block cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">Fetch CV</button></a>
+          <a href="<?php echo get_field('cv')['url'] ?>"><button class="blink-red hidden dark:block button bg-red-500  shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44 mr-2 md:mr-44 2xl:mr-64">Fetch CV <div class="liquid"></div> </button></a>
           
-         <a href="<?php echo get_field('video_cv')['url'] ?>"><button class="hidden dark:block cv-button bg-gradient-to-r from-blue-400 to-blue-600 dark:from-blue-400 dark:to-blue-600 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44">Watch CV</button></a>
+         <a href="<?php echo get_field('video_cv')['url'] ?>"><button class="blink-blue hidden dark:block button bg-blue-500 shadow-lg border-b-2 border-slate-50 text-white font-bold text-sm md:text-xl px-5 md:py-6 2xl:px-0 rounded-full w-38 md:w-44">Watch CV <div class="liquid2"></div></button></a>
           
         </div>
       </div>
