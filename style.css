@@ -1,0 +1,32 @@
+/*
+Theme name: Main
+Author: Daniel Pincu
+Author URI: https:/www.danielpincu.dk
+Description: This is a custom theme for my portfolio website.
+Version: 1.0
+License: GNU General Public License v2 or later
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+body
+{
+  font-family: "Kode Mono", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal; 
+}
+
+
+  /* Define the hover effect */
+  .main-navigation ul li a {
+    transition: transform 0.3s ease; /* Add smooth transition */
+  }
+
+  /* Apply scaling effect on hover */
+  .main-navigation ul li a:hover {
+    transform: scale(1.1); /* Increase scale on hover */
+  }
+
+  
