@@ -6,7 +6,7 @@
 
 
 
-        <main class="lg:grid grid-cols-12">
+<main class="lg:grid grid-cols-12">
             
 
 
@@ -190,14 +190,23 @@
 
 
   
-    <div class="lg:col-span-8 col-span-12 mx-5">
+    <div class="lg:col-span-8 col-span-12 mx-5" id="up">
       
      <!-- Mobile Navigation Bar -->
-     <div class="lg:hidden sticky top-0 z-10 bg-blue-100 dark:bg-red-100 -mx-5">
+     <div class="lg:hidden sticky top-5 z-10 bg-blue-100 dark:bg-red-100 -mx-5">
       <div class="flex justify-center items-center mt-10">
         <div class="flex my-5">
           <div class="mx-3">
-            <a class="text-lg font-bold cursor-pointer hover:scale-110 hover:transition ease-in-out duration-700">Nav Items</a>
+          
+          <ul class="navbar-nav flex gap-10">
+              <li class="nav-item"><a href="#up">Home</a></li>
+              <li class="nav-item"><a href="#show">Portfolio</a></li>
+              <li class="nav-item"><a href="#about">About</a></li>
+              <li class="nav-item"><a href="#contact">Contact</a></li>
+            
+              <!-- Add more navigation links as needed -->
+          </ul>
+       
           </div>
         </div>
       </div>
@@ -224,7 +233,7 @@
         </label>
 
         <!-- Welcome Text -->
-        <p class="text-xl md:text-3xl xl:text-5xl pl-3 mb-1 text-white">Welcome to the Matrix<span class="animate-pulse">|</span></p>
+        <p class="text-xl md:text-3xl xl:text-5xl pl-3 mb-1 text-white">Welcome to the Matrix<span class="matrix_pulse">|</span></p>
 
         <!-- CV Buttons -->
         <div class="flex md:pt-5 2xl:pt-24">
@@ -300,11 +309,11 @@
   <!-- portfolio start  -->
       <h1 class="text-4xl pb-16 flex justify-center" id="show">Portfolio</h1 > 
 
+
+
  <div class="grid md:grid-cols-2">
-   
-  
 <!-- Inject cards here  -->
-<?php
+                  <?php
                     $cards_loop = new WP_Query(array(
                         "post_type" => "cards",
                         "posts_per_page" => -1
@@ -319,19 +328,57 @@
 
                         <?php endwhile; ?>
                         <?php wp_reset_postdata() ?>
- <?php endif; ?>
+                    <?php endif; ?> 
+    </div>
+    
 
 
-         
+
+    <!-- about me -->
+    <div class="border-b-2 border-zinc-200 pb-20" id="about">
+    <div class="shadow-xl rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-200 border-2 border-blue-300 dark:border-red-300 crd-blue crd-red" data-aos="flip-right" data-aos-duration="1000">
+      <div>
+        <div class="flex justify-center">
+          <h1 class="text-4xl py-10">About Me</h1>
+        </div>
+        <div class="grid xl:grid-cols-2 gap-10 grid-cols-1">
+          <div>
+            <p v-for="(paragraph, index) in paragraphs" :key="index" class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate minima labore eligendi veniam, nesciunt voluptatibus vitae pariatur amet, ratione illo, excepturi iusto consequatur nihil quas sit hic odit deleniti provident?</p>
+          </div>
+          <div class="hidden lg:block">
+            <img class="rounded-3xl" src="imageSrc" alt="">
+          </div>
         </div>
 
+      </div>
+    </div>
+  </div>
 
 
 
+  <!-- contact -->
+
+  <div class="flex justify-center items-center bg-blue-200 dark:bg-red-200 rounded-3xl shadow-xl mt-20 mb-5 border-2 border-blue-300 dark:border-red-300 crd-blue crd-red" id="contact" data-aos="flip-right" data-aos-duration="1000">
+	  <div class="container mx-auto">
+		<h1 class="flex justify-center text-3xl mx-auto py-10">Drop me a message<span class="matrix_pulse">|</span></h1>
+		<form target="_blank" action="https://formspree.io/f/mgegplkr" method="POST" class="w-full p-8 my-4 md:px-12">
+		  <div class="grid grid-cols-1 gap-5 md:grid-cols-2 my-5">
+			<input type="text" name="name" class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg" placeholder="Full Name" required>
+			<input type="email" name="email" class="w-full bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg" placeholder="Email Address" required>
+		  </div>
+		  <div class="mb-5">
+			<textarea placeholder="Your Message" class="w-full h-32 bg-gray-200 text-gray-900 mt-2 p-3 rounded-lg focus:shadow-outline" name="message" rows="10" required></textarea>
+		  </div>
+		  <button type="submit" class="uppercase text-sm font-bold tracking-wide p-3 text-white rounded-full w-full bg-gradient-to-r from-blue-400 to-blue-600 dark:from-red-400 dark:to-red-600 shadow-lg border-b-2 border-slate-50">Submit Form</button>
+		</form>
+	  </div>
+	</div>
 
 
- </div>
+
+  </div>
 </div>
+
 
 
 
@@ -346,28 +393,21 @@
       
         <div class="flex justify-evenly items-center my-5">
 
-        
-            
         <nav class="navbar">
-    <ul class="navbar-nav">
-        <li class="nav-item"><a href="#home">Home</a></li>
-        <li class="nav-item"><a href="#show">Portfolio</a></li>
-       
-        <!-- Add more navigation links as needed -->
-    </ul>
-</nav>
+          <ul class="navbar-nav">
+              <li class="nav-item"><a href="#home">Home</a></li>
+              <li class="nav-item"><a href="#show">Portfolio</a></li>
+              <li class="nav-item"><a href="#about">About</a></li>
+              <li class="nav-item"><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
 
-
-
-
-
-          </div>
+        </div>
   
   </div>
 
 </div>
-
-  </main>
+</main>
 
 
 
