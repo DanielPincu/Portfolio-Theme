@@ -32,11 +32,11 @@
                       </div>
 
                       <div class="border-b border-zinc-400 pb-5">
-                        <h1 class="text-2xl font-bold text-center mt-5 font-serif">Daniel Pincu</h1>
+                        <h1 class="text-2xl font-bold text-center mt-5">Daniel Pincu</h1>
                         <p class="text-center text-gray-500">Front-end Developer</p>
                       </div>
                       
-                        <h1 class="font-bold font-serif text-2xl text-center pt-10">Details</h1>
+                        <h1 class="font-bold text-2xl text-center pt-10">Details</h1>
 
                         <?php while($details_loop->have_posts()): $details_loop->the_post() ?>
 
@@ -61,7 +61,7 @@
                     ?>
                     <?php if($languages->have_posts()): ?>
                         
-                        <h1 class="font-bold font-serif text-2xl text-center pt-14">Languages</h1>
+                        <h1 class="font-bold text-2xl text-center pt-14">Languages</h1>
                         <?php while($languages->have_posts()): $languages->the_post() ?>
 
                             <?php get_template_part("template-parts/languages"); ?>
@@ -87,7 +87,7 @@
                     ?>
                     <?php if($skills->have_posts()): ?>
                        
-                        <h1 class="font-bold font-serif text-2xl text-center pt-14">Skills</h1>
+                        <h1 class="font-bold text-2xl text-center pt-14">Skills</h1>
                         <?php while($skills->have_posts()): $skills->the_post() ?>
 
                             <?php get_template_part("template-parts/skills"); ?>
@@ -119,7 +119,7 @@
                     ));
                     ?>
                     <?php if($tools_loop->have_posts()): ?>
-                        <h1 class="font-bold font-serif text-2xl text-center pt-14">Tools</h1>
+                        <h1 class="font-bold text-2xl text-center pt-14">Tools</h1>
                         <?php while($tools_loop->have_posts()): $tools_loop->the_post() ?>
 
                             <?php get_template_part("template-parts/tools"); ?>
@@ -149,7 +149,7 @@
                     ));
                     ?>
                     <?php if($hobbies_loop->have_posts()): ?>
-                        <h1 class="font-bold font-serif text-2xl text-center pt-14">Hobbies</h1>
+                        <h1 class="font-bold text-2xl text-center pt-14">Hobbies</h1>
                         <?php while($hobbies_loop->have_posts()): $hobbies_loop->the_post() ?>
 
                             <?php get_template_part("template-parts/hobbies"); ?>
@@ -193,7 +193,7 @@
     <div class="lg:col-span-8 col-span-12 mx-5" id="up">
       
      <!-- Mobile Navigation Bar -->
-     <div class="lg:hidden sticky top-5 z-10 bg-blue-100 dark:bg-red-100 -mx-5">
+     <div class="lg:hidden sticky top-0 z-10 bg-blue-100 dark:bg-red-100 -mx-5">
       <div class="flex justify-center items-center mt-10">
         <div class="flex my-5">
           <div class="mx-3">
@@ -307,7 +307,7 @@
 
 
   <!-- portfolio start  -->
-      <h1 class="text-4xl pb-16 flex justify-center" id="show">Portfolio</h1 > 
+      <h1 class="text-4xl pb-16 flex justify-center pt-10" id="show">Portfolio</h1 > 
 
 
 
@@ -404,12 +404,12 @@
       
         <div class="flex justify-evenly items-center my-5">
 
-        <nav class="navbar">
+        <nav class="navbar pt-10">
           <ul class="navbar-nav">
-              <li class="nav-item"><a href="#home">Home</a></li>
-              <li class="nav-item"><a href="#show">Portfolio</a></li>
-              <li class="nav-item"><a href="#about">About</a></li>
-              <li class="nav-item"><a href="#contact">Contact</a></li>
+              <li class="nav-item text-md hover:scale-105 duration-300 hover:text-blue-500 dark:hover:text-red-500 font-bold text-center pb-5"><a href="#home">Home</a></li>
+              <li class="nav-item text-md hover:scale-105 duration-300 hover:text-blue-500 dark:hover:text-red-500 font-bold text-center pb-5"><a href="#show">Showcase</a></li>
+              <li class="nav-item text-md hover:scale-105 duration-300 hover:text-blue-500 dark:hover:text-red-500 font-bold text-center pb-5"><a href="#about">About</a></li>
+              <li class="nav-item text-md hover:scale-105 duration-300 hover:text-blue-500 dark:hover:text-red-500 font-bold text-center pb-5"><a href="#contact">Contact</a></li>
           </ul>
         </nav>
 

@@ -14,9 +14,9 @@ if (!empty(get_field('http_url'))) {
 <div class="grid md:grid-cols-1">
     <div class="suitcase-card cursor-pointer">
         <div class="suitcase-wrapper crd-blue crd-red monitor">
-            <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
+            <div class="suitcase hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500 bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
                 
-                <div class="suitcase-body hover:bg-blue-300 dark:hover:bg-red-300 ease-out duration-500  bg-blue-200 dark:bg-red-200 p-10" onclick="toggleCardVisibility('<?php echo $title; ?>')">
+                <div class="suitcase-body mx-4 my-10 h-[350px] xl:h-56 bg-blue-200 dark:bg-red-200" onclick="toggleCardVisibility('<?php echo $title; ?>')">
                     <h1 class="text-2xl font-bold cursor-pointer mb-5"><?php echo $title; ?></h1>
                     <p><?php echo $description ?></p>
                 </div>
