@@ -82,7 +82,8 @@
 
         
         
-                  <?php
+               
+               <?php
                     $skills = new WP_Query(array(
                         "post_type" => "skills",
                         "posts_per_page" => -1
@@ -101,7 +102,7 @@
                         <?php wp_reset_postdata() ?>
                   <?php endif; ?>
 
-
+              
           
         
 
@@ -145,6 +146,7 @@
        
           
 
+        <div class="sticky top-20">
         <?php
                     $hobbies_loop = new WP_Query(array(
                         "post_type" => "hobbies",
@@ -162,6 +164,7 @@
                         <?php wp_reset_postdata() ?>
           <?php endif; ?>
 
+        </div>
 
          
        
@@ -309,7 +312,7 @@
 
 
   <!-- portfolio start  -->
-      <h1 class="text-4xl pb-16 flex justify-center pt-10" id="show" data-aos="fade-down" data-aos-duration="1000">Portfolio</h1> 
+      <h1 class="text-4xl pb-16 flex justify-center pt-10 dark:text-slate-200 " id="show" data-aos="fade-down" data-aos-duration="1000">Portfolio</h1> 
 
 
 
