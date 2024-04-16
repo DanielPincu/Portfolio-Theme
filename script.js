@@ -12,7 +12,20 @@ document.addEventListener('DOMContentLoaded', function () {
           document.body.classList.remove('dark');
       }
   });
+
+  const darkModeCheckbox2 = document.getElementById('darkModeCheckbox2');
+  
+darkModeCheckbox2.addEventListener('change', function () {
+    if (this.checked) {
+        document.body.classList.add('dark');
+    } else {
+        document.body.classList.remove('dark');
+    }
 });
+
+});
+
+
 
 function toggleCardVisibility(title) {
   var div = document.getElementById(title);
@@ -32,11 +45,13 @@ function toggleCardVisibility(title) {
 function openModal(url) {
   const modal = document.getElementById('myModal');
   const iframe = document.getElementById('modalIframe');
+  document.body.classList.add('overflow-hidden');
   iframe.src = url;
   modal.classList.remove('hidden');
 }
 
 function closeModal() {
   const modal = document.getElementById('myModal');
+  document.body.classList.remove('overflow-hidden');
   modal.classList.add('hidden');
 }

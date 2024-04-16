@@ -11,4 +11,4 @@
 
 
 
-<body class='tracking-tighter'>
+<body class='tracking-tighter dark'>

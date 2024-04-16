@@ -15,6 +15,10 @@ body
   font-family: "Kode Mono", monospace;
 }
 
+body.dark {
+    background: black;
+  }
+
 
   /* Define the hover effect */
   .main-navigation ul li a {
@@ -251,4 +255,8 @@ body
     background: #ddd; 
     border-radius: 50%; 
     box-shadow: 0 0 3px 0 white; 
+  }
+
+  .overflow-hidden {
+    overflow: hidden;
   }
