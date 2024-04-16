@@ -59,8 +59,3 @@ function closeModal() {
   iframe.src = '';
 }
 
-jQuery(document).ready(function($) {
-  AOS.init(
-    {once: true}
-  );
-});
