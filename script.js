@@ -53,8 +53,10 @@ function openModal(url) {
 
 function closeModal() {
   const modal = document.getElementById('myModal');
+  const iframe = document.getElementById('modalIframe');
   document.body.classList.remove('overflow-hidden');
   modal.classList.add('hidden');
+  iframe.src = '';
 }
 
 jQuery(document).ready(function($) {
