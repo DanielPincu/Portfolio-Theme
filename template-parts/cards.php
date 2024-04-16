@@ -13,19 +13,19 @@ if (!empty(get_field('http_url'))) {
 <div class="grid md:grid-cols-1">
     <div class="suitcase-card">
         <div class="suitcase-wrapper crd-blue crd-red monitor">
-            <div class="suitcase bg-blue-200 dark:bg-red-200 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
+            <div class="suitcase bg-blue-200 dark:bg-red-400 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
                 
-                <div class="suitcase-body mx-4 my-10 h-[250px] xl:h-56 bg-blue-200 dark:bg-red-200" onclick="toggleCardVisibility('<?php echo $title; ?>')">
-                    <h1 class="text-2xl font-bold cursor-pointer mb-5 p-5 hover:text-slate-200 duration-500"><?php echo $title; ?></h1>
-                    <p class="cursor-pointer"><?php echo $description ?></p>
+                <div class="suitcase-body mx-4 my-10 h-[250px] xl:h-56 bg-blue-200 dark:bg-red-400" onclick="toggleCardVisibility('<?php echo $title; ?>')">
+                    <h1 class="text-2xl font-bold cursor-pointer mb-5 dark:text-slate-200 dark:hover:text-black duration-500"><?php echo $title; ?></h1>
+                    <p class="cursor-pointer dark:text-slate-200"><?php echo $description ?></p>
                 </div>
                 <div id="<?php echo $title; ?>" class="hidden expandable-card">
                     <a href="#" onclick="openModal('<?php echo $image_source; ?>'); return false;">
                         <img class="border-t-2 border-b-2 border-transparent hover:dark:border-red-500 hover:border-blue-500 duration-300" src="<?php echo $image["url"] ?>">
                     </a>
-                    <p class="bg-blue-200 dark:bg-red-200 rounded-3xl p-10"><?php echo $extra_description ?></p>
+                    <p class="bg-blue-200 dark:bg-red-400 dark:text-slate-200 rounded-3xl p-10"><?php echo $extra_description ?></p>
                     <div class="flex justify-center">
-                    <button onclick="openModal('<?php echo $image_source; ?>'); return false;" class="m-5 uppercase text-sm font-bold text-white rounded-full w-64 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-red-400 hover:scale-[102%] duration-300 dark:to-red-600 shadow-lg border-b-2 border-slate-50">Visit project</button>
+                    <button onclick="openModal('<?php echo $image_source; ?>'); return false;" class="m-5 uppercase text-sm font-bold text-white rounded-full w-64 bg-gradient-to-r from-blue-600 to-blue-700 dark:from-red-600 hover:scale-[102%] duration-300 dark:to-red-700 shadow-lg border-b-2 border-slate-50">Visit project</button>
                     </div>
                 </div>
             </div>
