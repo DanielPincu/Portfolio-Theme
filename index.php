@@ -1,3 +1,6 @@
+<script>
+  AOS.init();
+</script>
 <?php get_header() ?>
 
     <?php if(have_posts()): ?>
@@ -36,7 +39,7 @@
                         <p class="text-center text-gray-500 dark:text-slate-200">Front-end Developer</p>
                       </div>
                       
-                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-10">Details</h1>
+                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-10" data-aos='fade-up'>Details</h1>
 
                         <?php while($details_loop->have_posts()): $details_loop->the_post() ?>
 
@@ -61,7 +64,7 @@
                     ?>
                     <?php if($languages->have_posts()): ?>
                         
-                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-14">Languages</h1>
+                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-14" data-aos='fade-up'>Languages</h1>
                         <?php while($languages->have_posts()): $languages->the_post() ?>
 
                             <?php get_template_part("template-parts/languages"); ?>
@@ -87,7 +90,7 @@
                     ?>
                     <?php if($skills->have_posts()): ?>
                        
-                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-14">Skills</h1>
+                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-14" data-aos="fade-up">Skills</h1>
                         <?php while($skills->have_posts()): $skills->the_post() ?>
 
                             <?php get_template_part("template-parts/skills"); ?>
@@ -119,7 +122,7 @@
                     ));
                     ?>
                     <?php if($tools_loop->have_posts()): ?>
-                        <h1 class="font-bold text-2xl dark:text-slate-200 text-center pt-14">Tools</h1>
+                        <h1 class="font-bold text-2xl dark:text-slate-200 text-center pt-14" data-aos='fade-up'>Tools</h1>
                         <?php while($tools_loop->have_posts()): $tools_loop->the_post() ?>
 
                             <?php get_template_part("template-parts/tools"); ?>
@@ -149,7 +152,7 @@
                     ));
                     ?>
                     <?php if($hobbies_loop->have_posts()): ?>
-                        <h1 class="font-bold text-2xl dark:text-slate-200 text-center pt-14">Hobbies</h1>
+                        <h1 class="font-bold text-2xl dark:text-slate-200 text-center pt-14" data-aos='fade-up'>Hobbies</h1>
                         <?php while($hobbies_loop->have_posts()): $hobbies_loop->the_post() ?>
 
                             <?php get_template_part("template-parts/hobbies"); ?>
@@ -336,7 +339,7 @@
 
     <!-- about me -->
 
-    <div class="border-b-2 border-zinc-200 dark:border-zinc-700 pb-20" id="about">
+    <div class="border-b-2 border-zinc-200 dark:border-zinc-700 pb-20" id="about" data-aos='flip-left'>
     <div class="crd-blue crd-red rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-500 border-2 border-blue-300 dark:border-red-300 crd-blue crd-red">
       <div>
         <div class="flex justify-center">

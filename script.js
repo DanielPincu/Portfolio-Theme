@@ -56,3 +56,9 @@ function closeModal() {
   document.body.classList.remove('overflow-hidden');
   modal.classList.add('hidden');
 }
+
+jQuery(document).ready(function($) {
+  AOS.init(
+    {once: true}
+  );
+});
