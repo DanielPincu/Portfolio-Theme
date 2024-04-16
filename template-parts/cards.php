@@ -40,11 +40,7 @@ if (!empty(get_field('http_url'))) {
 <div id="myModal" class="modal fixed inset-0 z-50 overflow-auto bg-black bg-opacity-50 hidden flex items-center justify-center">
     <!-- Modal content -->
     <div class="modal-content bg-white w-3/4 h-3/4 lg:w-[1100px] p-8 rounded-3xl flex flex-col items-center relative">
-        <span class="absolute top-0 right-0 p-4 cursor-pointer">
-            <svg onclick="closeModal()" class="w-6 h-6 text-gray-600 hover:text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-        </span>
         <iframe id="modalIframe" class="w-full h-full" src="" frameborder="0"></iframe>
+        <button class="mt-5 px-5 bg-blue-500 text-slate-200 dark:bg-red-500 hover:scale-[102%] rounded-full" onclick="closeModal()">CLOSE</button>
     </div>
 </div>
