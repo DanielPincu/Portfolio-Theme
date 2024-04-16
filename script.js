@@ -40,6 +40,7 @@ function toggleCardVisibility(title) {
 
   // Toggle visibility of clicked card
   div.classList.toggle('hidden');
+  
 }
 
 function openModal(url) {
