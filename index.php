@@ -1,6 +1,4 @@
-<script>
-  AOS.init();
-</script>
+
 <?php get_header() ?>
 
     <?php if(have_posts()): ?>
@@ -30,16 +28,16 @@
                     <?php if($details_loop->have_posts()): ?>
                       
                       
-                      <div class="flex justify-center" data-aos='fade-up' data-aos-duration="1000">
+                      <div class="flex justify-center">
                             <img class="rounded-full w-48 mt-10 px-3" src="<?php echo get_field("logo")["url"];?>">
                       </div>
 
-                      <div class="border-b border-zinc-400 dark:border-zinc-700 pb-5" data-aos='fade-up' data-aos-duration="1000">
+                      <div class="border-b border-zinc-400 dark:border-zinc-700 pb-5">
                         <h1 class="text-2xl font-bold text-center dark:text-slate-200 mt-5">Daniel Pincu</h1>
                         <p class="text-center text-gray-500 dark:text-slate-200">Front-end Developer</p>
                       </div>
                       
-                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-10" data-aos='fade-up'>Details</h1>
+                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-10">Details</h1>
 
                         <?php while($details_loop->have_posts()): $details_loop->the_post() ?>
 
@@ -64,7 +62,7 @@
                     ?>
                     <?php if($languages->have_posts()): ?>
                         
-                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-14" data-aos='fade-up'>Languages</h1>
+                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-14">Languages</h1>
                         <?php while($languages->have_posts()): $languages->the_post() ?>
 
                             <?php get_template_part("template-parts/languages"); ?>
@@ -91,7 +89,7 @@
                     ?>
                     <?php if($skills->have_posts()): ?>
                        
-                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-14" data-aos="fade-up">Skills</h1>
+                        <h1 class="font-bold text-2xl text-center dark:text-slate-200 pt-14">Skills</h1>
                         <?php while($skills->have_posts()): $skills->the_post() ?>
 
                             <?php get_template_part("template-parts/skills"); ?>
@@ -123,7 +121,7 @@
                     ));
                     ?>
                     <?php if($tools_loop->have_posts()): ?>
-                        <h1 class="font-bold text-2xl dark:text-slate-200 text-center pt-14" data-aos='fade-up'>Tools</h1>
+                        <h1 class="font-bold text-2xl dark:text-slate-200 text-center pt-14">Tools</h1>
                         <?php while($tools_loop->have_posts()): $tools_loop->the_post() ?>
 
                             <?php get_template_part("template-parts/tools"); ?>
@@ -154,7 +152,7 @@
                     ));
                     ?>
                     <?php if($hobbies_loop->have_posts()): ?>
-                        <h1 class="font-bold text-2xl dark:text-slate-200 text-center pt-14" data-aos='fade-up'>Hobbies</h1>
+                        <h1 class="font-bold text-2xl dark:text-slate-200 text-center pt-14">Hobbies</h1>
                         <?php while($hobbies_loop->have_posts()): $hobbies_loop->the_post() ?>
 
                             <?php get_template_part("template-parts/hobbies"); ?>
@@ -219,7 +217,7 @@
     <!-- Hero Section -->
     
       
-    <div class="relative" data-aos="fade-down" data-aos-duration="1000">
+    <div class="relative">
       <!-- Profile Image -->
       <img class="rounded-full blink border-blue-500 dark:border-red-500 mx-auto w-[90%] m-10 dark:scale-x-[-1]" src="<?php echo get_field("hero_image")["url"];?>" alt="">
 
@@ -266,14 +264,14 @@
    
   
 
-      <div class="pt-10 border-zinc-400 dark:border-zinc-700 xl:flex justify-center hidden" data-aos="fade-down" data-aos-duration="1000">
-        <h1 class="text-4xl pt-16 dark:text-slate-200 pb-16">Services</h1>
+      <div class="pt-10 border-zinc-400 dark:border-zinc-700 xl:flex justify-center hidden">
+        <h1 class="text-4xl pt-16 dark:text-slate-200 pb-16 fade-in">Services</h1>
       </div> 
 
 
       <!-- services -->
 
-      <div class="xl:grid md:grid-cols-4 grid-cols-2 items-center gap-5 md:pb-10 mb-16 hidden" data-aos="fade-down" data-aos-duration="1000">
+      <div class="xl:grid md:grid-cols-4 grid-cols-2 items-center gap-5 md:pb-10 mb-16 fade-in hidden">
         <div class="crd-blue crd-red border-2 h-52 border-blue-300 dark:border-red-600 bg-blue-200 dark:bg-red-500 rounded-3xl drop-shadow-xl flex flex-col items-center mb-10">
           <h1 class="text-2xl text-center text-blue-500 dark:text-slate-200 pt-10">Web Dev</h1>
           <svg class="text-blue-400 dark:text-slate-200 w-32 md:w-64 justify-center" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
@@ -312,7 +310,7 @@
 
 
   <!-- portfolio start  -->
-      <h1 class="text-4xl pb-16 flex justify-center pt-10 dark:text-slate-200 " id="show" data-aos="fade-down" data-aos-duration="1000">Portfolio</h1> 
+      <h1 class="text-4xl pb-16 flex justify-center pt-10 dark:text-slate-200 fade-in" id="show">Portfolio</h1> 
 
 
 
@@ -343,7 +341,7 @@
     <!-- about me -->
 
     <div class="border-b-2 border-zinc-200 dark:border-zinc-700 pb-20" id="about" data-aos='flip-left' data-aos-duration="1000">
-    <div class="crd-blue crd-red rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-500 border-2 border-blue-300 dark:border-red-300 crd-blue crd-red">
+    <div class="crd-blue crd-red rounded-3xl mt-20 px-5 2xl:px-14 pb-20 bg-blue-200 dark:bg-red-500 border-2 border-blue-300 dark:border-red-300 crd-blue crd-red fade-in">
       <div>
         <div class="flex justify-center">
           <h1 class="text-4xl py-10 dark:text-slate-200">About Me</h1>
@@ -375,7 +373,7 @@
 
   <!-- contact -->
 
-  <div class="flex justify-center items-center bg-blue-200 dark:bg-red-500 rounded-3xl  mt-20 mb-5 border-2 border-blue-300 dark:border-red-300 crd-blue crd-red" id="contact" data-aos="flip-right" data-aos-duration="1000">
+  <div class="flex justify-center items-center bg-blue-200 dark:bg-red-500 rounded-3xl  mt-20 mb-5 border-2 border-blue-300 dark:border-red-300 crd-blue crd-red fade-in" id="contact">
 	  <div class="container mx-auto">
 		<h1 class="flex justify-center text-3xl mx-auto py-10 dark:text-slate-200">Drop me a message<span class="matrix_pulse">|</span></h1>
 		<form target="_blank" action="https://formspree.io/f/mgegplkr" method="POST" class="w-full p-8 my-4 md:px-12">

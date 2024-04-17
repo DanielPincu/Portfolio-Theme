@@ -10,7 +10,7 @@ if (!empty(get_field('http_url'))) {
 }
 ?>
 
-<div class="grid md:grid-cols-1" data-aos="fade-down" data-aos-duration="1000">
+<div class="grid md:grid-cols-1 fade-in">
     <div class="suitcase-card">
         <div class="suitcase-wrapper crd-blue crd-red monitor">
             <div class="suitcase bg-blue-200 dark:bg-red-400 rounded-3xl overflow-hidden border-2 border-blue-300 dark:border-red-300 shadow-xl">
